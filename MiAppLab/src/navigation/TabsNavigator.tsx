@@ -25,7 +25,7 @@ const { email } = route.params;
         initialRouteName="Inicio"
         screenOptions={({ route }) => ({
         headerShown: false,
-        tabBarActiveTintColor: "#5f0650",
+        tabBarActiveTintColor: "#3f13d0",
         tabBarInactiveTintColor: "#888888",
 
         tabBarIcon: ({ color, size }) => {
