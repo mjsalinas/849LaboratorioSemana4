@@ -32,7 +32,7 @@ export default function IMCTab() {
         value={peso} onChange={setPeso} />
       <CustomInput type='number' placeholder='Altura (cm)'
         value={altura} onChange={setAltura} />
-      <CustomButton title='Calcular' onPress={calcular} />
+      <CustomButton title='Calcular' onPress={calcular} variant = "primary" />
       {resultado !== null && (() => {
         const cat = getCategoria(resultado);
         return (

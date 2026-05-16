@@ -4,14 +4,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import StackNavigator from './src/navigation/StackNavigator';
 import { navigationRef } from './src/navigation/NavigationService';
 
-
-
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Laboratorio #1</Text>
+    <NavigationContainer>
+      <StackNavigator />
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
 
