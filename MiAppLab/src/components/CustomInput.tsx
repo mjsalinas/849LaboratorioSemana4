@@ -12,6 +12,7 @@ type Props = {
 
 export default function CustomInput({ type = 'text', placeholder, value, onChange }: Props) {
   const [secure, setSecure] = useState(type === 'password');
+  const [touched, setTouched] = useState(false);
   const isPassword = type === 'password';
 
   const icon: typeof MaterialIcons['name'] | undefined =
@@ -28,13 +29,14 @@ export default function CustomInput({ type = 'text', placeholder, value, onChang
     if (type === 'password' && value.length < 4) return 'Contrasena muy corta';
     if (type === 'number' && value.length < 8) return 'Numero invalido';
   };
-  const error = getError();
+  const error = touched ? getError() : undefined;
 
   return (
     <View style={styles.wrapper}>
       <View style={[styles.container, error ? styles.errorBorder : null]}>
         {icon && <MaterialIcons name={icon as any} size={22} color='#555' />}
-        <TextInput placeholder={placeholder} value={value} onChangeText={onChange}
+        <TextInput placeholder={placeholder} value={value}
+          onChangeText={(t) => { setTouched(true); onChange(t); }}
           style={styles.input} secureTextEntry={secure} keyboardType={keyboard} />
         {isPassword && (
           <TouchableOpacity onPress={() => setSecure(!secure)}>
