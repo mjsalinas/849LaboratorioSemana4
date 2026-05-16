@@ -28,7 +28,7 @@ export default function TabsNavigator({ route }: TabsNavigatorProps) {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
-          let iconName: keyof typeof Ionicons.mapping = 'home';
+          let iconName: 'home' | 'calculator' | 'person' = 'home';
 
           if (route.name === 'Inicio') {
             iconName = 'home';
