@@ -21,23 +21,19 @@ export default function LoginScreen({ navigation }: Props) {
       //email
       <CustomInput
         placeholder={"Correo"}
-        value={"email"}
-        onChange={() => {
-          setEmail;
-        }}
+        value={email}
+        onChange={setEmail}
       />
       //contra
       <CustomInput
         placeholder={"contrasena"}
-        value={"password"}
-        onChange={() => {
-          setPassword;
-        }}
+        value={password}
+        onChange={setPassword}
       />
       //Bottom
       <CustomButton
         title={"Login"}
-        onPress={()=>{handleLogin}}
+        onPress={handleLogin}
       />
     </View>
   );

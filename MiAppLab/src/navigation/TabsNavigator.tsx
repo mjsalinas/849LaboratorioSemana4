@@ -15,7 +15,7 @@ export type TabsParamList = {
 
 const Tab = createBottomTabNavigator<TabsParamList>();
 
-export default function TabsNavigator() {
+export default function TabsNavigator({route}:any) {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -32,9 +32,9 @@ export default function TabsNavigator() {
         tabBarInactiveTintColor: "gray",
       })}
     >
-      <Tab.Screen name="Inicio" component={HomeTab} />
+      <Tab.Screen name="Inicio" component={HomeTab} initialParams={route?.params} />
       <Tab.Screen name="IMC" component={IMCTab} />
-      <Tab.Screen name="Perfil" component={ProfileTab} />
+      <Tab.Screen name="Perfil" component={ProfileTab} initialParams={route?.params} />
     </Tab.Navigator>
   );
 }
