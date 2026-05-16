@@ -9,7 +9,7 @@ export default function LoginScreen ({navigation}:any)
     const [password, setPassword] = useState("");
 
     const handleLogin = () => {
-    if (email && password.length >= 4) {
+    if (email.includes('@') && password.length >= 4) {
         try{
             navigation.navigate('MainTabs', { email });
 
@@ -22,7 +22,7 @@ export default function LoginScreen ({navigation}:any)
 
     return (
         <View style={styles.container}>
-            <CustomInput placeholder={'Ingresa tu correo'} value={email} onChange={setEmail}/>
+            <CustomInput type={'email'} placeholder={'Ingresa tu correo'} value={email} onChange={setEmail}/>
 
             <CustomInput type={'password'} value={password} placeholder={'Ingresa tu contraseña'} onChange={setPassword}/>
 
