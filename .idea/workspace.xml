@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f8132262-7d1e-4697-9bff-1a08d3370e9f" name="Changes" comment="Lab-Misael Alberto&#10;Creacion de app Expo con navegacion por tabs, login, calculadora IMC y correccion de errores">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiAppLab/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiAppLab/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiAppLab/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiAppLab/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiAppLab/src/components/CustomInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/MiAppLab/src/components/CustomInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiAppLab/src/navigation/StackNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/MiAppLab/src/navigation/StackNavigator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiAppLab/src/screens/tabs/IMCTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/MiAppLab/src/screens/tabs/IMCTab.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="4" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Dmpr1JzUD0uRsKZvRtLREzlTOj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "lab-misael-alberto",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Misae/Downloads/Progra movil/Laboratorio Navegacion por Tabs/849LaboratorioSemana4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\Misae\\Downloads\\Progra movil\\Laboratorio Navegacion por Tabs\\849LaboratorioSemana4\\MiAppLab\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8132262-7d1e-4697-9bff-1a08d3370e9f" name="Changes" comment="" />
+      <created>1778897294444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778897294444</updated>
+      <workItem from="1778897295468" duration="15512000" />
+    </task>
+    <task id="LOCAL-00001" summary="Lab-Misael Alberto&#10;Creacion de app Expo con navegacion por tabs, login, calculadora IMC y correccion de errores">
+      <option name="closed" value="true" />
+      <created>1778905226290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778905226290</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab-Misael Alberto&#10;Creacion de app Expo con navegacion por tabs, login, calculadora IMC y correccion de errores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab-Misael Alberto&#10;Creacion de app Expo con navegacion por tabs, login, calculadora IMC y correccion de errores" />
+  </component>
+</project>

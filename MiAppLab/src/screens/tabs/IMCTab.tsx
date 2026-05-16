@@ -10,12 +10,20 @@ export default function ImcScreen() {
     const [resultado, setResultado] = useState<number | null>(null);
 
     const calcular = () => {
+        const regex = /^[0-9]*\.?[0-9]+$/;
+
+        if (!regex.test(peso) || !regex.test(altura)) {
+            setResultado(null);
+            return; //
+        }
 
         const p = parseFloat(peso);
-        const a = parseFloat(altura) / 100;  // cm → metros
-        if (p > 0 && a > 0) {
-            setResultado(Math.round((p / (a * a)) * 10) / 10);
-        }
+        const a = parseFloat(altura) / 100;
+
+        if (p <= 0 || a <= 0) return;
+
+        const imc = Math.round((p / (a * a)) * 10) / 10;
+        setResultado(imc);
     };
     const getCategoria = (imc: number) => {
         if (imc < 18.5) return {label: 'Bajo peso', color: '#3498db'};

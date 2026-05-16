@@ -11,6 +11,7 @@ export type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function StackNavigator() {
+
     return (
         <Stack.Navigator initialRouteName='Login' screenOptions={{ headerShown: true }}>
             <Stack.Screen name='Login' component={LoginScreen} />
