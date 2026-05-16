@@ -27,9 +27,19 @@ export default function IMCTab() {
     <View style={styles.container}>
       <Text style={styles.title}>Calculadora de IMC</Text>
       <CustomInput type='number' placeholder='Peso (kg)'
-        value={peso} onChange={setPeso} />
+        value={peso} onChange={setPeso}
+        validate={(v) => {
+          const n = parseFloat(v);
+          if (isNaN(n) || n <= 0) return 'Peso invalido';
+          if (n < 20 || n > 300) return 'Peso fuera de rango';
+        }} />
       <CustomInput type='number' placeholder='Altura (cm)'
-        value={altura} onChange={setAltura} />
+        value={altura} onChange={setAltura}
+        validate={(v) => {
+          const n = parseFloat(v);
+          if (isNaN(n) || n <= 0) return 'Altura invalida';
+          if (n < 50 || n > 250) return 'Altura fuera de rango';
+        }} />
       <CustomButton title='Calcular' onPress={calcular} />
       {resultado !== null && (() => {
         const cat = getCategoria(resultado);

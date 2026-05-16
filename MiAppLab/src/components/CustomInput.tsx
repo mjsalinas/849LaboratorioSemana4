@@ -8,9 +8,10 @@ type Props = {
   placeholder: string;
   value: string;
   onChange: (text: string) => void;
+  validate?: (value: string) => string | undefined;
 };
 
-export default function CustomInput({ type = 'text', placeholder, value, onChange }: Props) {
+export default function CustomInput({ type = 'text', placeholder, value, onChange, validate }: Props) {
   const [secure, setSecure] = useState(type === 'password');
   const [touched, setTouched] = useState(false);
   const isPassword = type === 'password';
@@ -25,6 +26,7 @@ export default function CustomInput({ type = 'text', placeholder, value, onChang
     type === 'number' ? 'phone-pad' : 'default';
 
   const getError = () => {
+    if (validate) return validate(value);
     if (type === 'email' && !value.includes('@')) return 'Correo invalido';
     if (type === 'password' && value.length < 4) return 'Contrasena muy corta';
     if (type === 'number' && value.length < 8) return 'Numero invalido';
