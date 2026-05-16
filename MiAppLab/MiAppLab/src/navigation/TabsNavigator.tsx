@@ -45,7 +45,7 @@ export default function TabsNavigator({ route }: Props) {
         options={{
           title: "Mi IMC",
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="person" size={size} color={color} />
+            <MaterialIcons name="accessibility" size={size} color={color} />
           ),
         }}
       />

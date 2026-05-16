@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f0f0f0",
     paddingHorizontal: 12,
     paddingVertical: 4,
+    
   },
   input: { flex: 1, paddingVertical: 10, paddingHorizontal: 8 },
   errorBorder: { borderColor: "red" },

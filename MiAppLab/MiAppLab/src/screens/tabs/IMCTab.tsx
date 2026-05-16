@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Keyboard } from "react-native";
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { TabsParamList } from "../../navigation/TabsNavigator";
 import CustomButton from "../../components/CustomButton";
@@ -7,7 +7,7 @@ import CustomInput from "../../components/CustomInput";
 
 type Props = BottomTabScreenProps<TabsParamList, "IMC">;
 
-export default function IMCTab({ route, navigation }: Props) {
+export default function IMCTab() {
   const [peso, setPeso] = useState("");
   const [altura, setAltura] = useState("");
   const [resultado, setResultado] = useState<number | null>(null);
@@ -19,6 +19,8 @@ export default function IMCTab({ route, navigation }: Props) {
     if (p > 0 && a > 0) {
       setResultado(Math.round((p / (a * a)) * 10) / 10);
     }
+     Keyboard.dismiss();
+
   };
   const getCategoria = (imc: number) => {
     if (imc < 18.5) return { label: "Bajo peso", color: "#3498db" };
